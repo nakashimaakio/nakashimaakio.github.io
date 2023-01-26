@@ -3,13 +3,13 @@ body {
     margin-right: 5%;
     margin-left: 5%;
     margin-bottom: 100px;
-    color: #444444;
+    color: #404040;
     background-color: #FDFDFD;
     font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
 }
 
 p.title {
-    font-size: 160%;
+    font-size: 180%;
     text-align: center;
     margin-top: 140px;
     margin-bottom: 0px;
@@ -43,7 +43,6 @@ li.block {
     padding-bottom: 4px;
     border-radius: 4px;
     width: fit-content;
-    font-size: 80%;
     display: inline-block;
     _display: inline;
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
