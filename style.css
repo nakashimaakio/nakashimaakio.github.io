@@ -22,10 +22,8 @@ li {
     list-style: none;
 }
 
-p.app-name {
-    margin-bottom: 2px;
-    margin-top: 8px;
-    font-family: 'Arial', sans-serif;
+p.sentence {
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 li.block {
@@ -39,5 +37,5 @@ li.block {
     font-size: 80%;
     display: inline-block;
     _display: inline;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
