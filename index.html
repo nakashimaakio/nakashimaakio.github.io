@@ -6,17 +6,6 @@
         <link rel="icon" href="img/favicon.ico" id="favicon">
         <link rel="img/apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
         <link rel="stylesheet" href="style.css">
-        <style>
-            body {
-                margin-top: 100px;
-                margin-right: 5%;
-                margin-left: 5%;
-                margin-bottom: 100px;
-                color: #444444;
-                background-color: #FDFDFD;
-                font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
-            }
-        </style>
     </head>
     <body>
         <!-- アイコン -->
@@ -32,27 +21,50 @@
         <p> <img src="img/map_pin.png" style="vertical-align: middle;"> Tokyo </p>
 
         <!--About-->
-        <p style="font-size:160%;text-align:center;margin-top:100px;margin-bottom:0px;border:none;letter-spacing:0.05em;"><b>About</b></p>
-        <hr style="margin-top:0px;background-color: #DDDDDD;">
+        <p style="font-size:160%;text-align:center;margin-top:140px;margin-bottom:0px;border:none;letter-spacing:0.05em;"><b>About</b></p>
+        <hr style="margin-top:0px;background-color: #DDDDDD;margin-bottom: 20px;">
         大阪大学大学院 基礎工学研究科卒。2017年Panasonic入社。2020年から現在に至るまで、フリーランスのAndroidアプリ開発エンジニアとして活動。
 
         <!--Works-->
-        <p style="font-size:160%;text-align:center;margin-top:100px;margin-bottom:0px;border:none;letter-spacing:0.05em;"><b>Works</b></p>
-        <hr style="margin-top:0px;background-color: #DDDDDD;">
+        <p style="font-size:160%;text-align:center;margin-top:140px;margin-bottom:0px;border:none;letter-spacing:0.05em;"><b>Works</b></p>
+        <hr style="margin-top:0px;background-color: #DDDDDD;margin-bottom: 20px;">
 
-        <a href="https://play.google.com/store/apps/details?id=com.photograph.mosaic">
-            <div style="background:#FDFDFD;" onMouseOut="this.style.background='#FDFDFD';" onMouseOver="this.style.background='#F4F4F4';">
+        <div style="background:#FDFDFD;" onMouseOut="this.style.background='#FDFDFD';" onMouseOver="this.style.background='#F4F4F4';">
+            <a href="https://play.google.com/store/apps/details?id=com.photograph.mosaic">
                 <table>
                     <tr>
-                        <td width="72px" height="72px"><img src="img/mosaic.png" style="vertical-align: middle;" width="72px" height="72px"></td>
+                        <td width="72px" height="72px"><img src="img/app_mosaic.png" style="vertical-align: middle;" width="72px" height="72px"></td>
                         <td>&nbsp;</td>
                         <td style="vertical-align: top;">
-                            <p style="margin-bottom:0px;">モザイクアプリ</p>
-                            <p style="margin-top:0px;font-size: 90%;">モザイク加工を行うアプリ</p>
+                            <p class="app-name">モザイクアプリ</p>
+                            <ul style="margin-top: 1px;">
+                                <li class="block"> Android </li>
+                                <li class="block" style="margin-left: 4px;"> Kotlin </li>
+                                <li class="block" style="margin-left: 4px;"> RenderScript </li>
+                            </ul>
                         </td>
                     </tr>
                 </table>
-            </div>
-        </a>
+            </a>
+        </div>
+
+        <div style="background:#FDFDFD;margin-top: 20px;" onMouseOut="this.style.background='#FDFDFD';" onMouseOver="this.style.background='#F4F4F4';">
+            <a href="https://play.google.com/store/apps/details?id=com.photograph.linephoto">
+                <table>
+                    <tr>
+                        <td width="72px" height="72px"><img src="img/app_outline.png" style="vertical-align: middle;" width="72px" height="72px"></td>
+                        <td>&nbsp;</td>
+                        <td style="vertical-align: top;">
+                            <p class="app-name">アウトライン加工写真アプリ</p>
+                            <ul style="margin-top: 1px;">
+                                <li class="block"> Android </li>
+                                <li class="block" style="margin-left: 4px;"> Kotlin </li>
+                                <li class="block" style="margin-left: 4px;"> OpenCV </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+        </div>
     </body>
 </html>
