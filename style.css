@@ -17,6 +17,14 @@ p.title {
     letter-spacing: 0.1em;
 }
 
+.imagebutton {
+    vertical-align: middle;
+    height: 36px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 p.sentence {
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
