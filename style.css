@@ -47,3 +47,38 @@ li.block {
     _display: inline;
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
+
+.pie {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 28px;
+    margin-top: 28px;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.pie.pie25 {
+    background-image: radial-gradient(#fdfdfd 62%, transparent 63%), conic-gradient(#00d761 0% 25%, #d9d9d9 25% 100%);
+}
+
+.pie.pie50 {
+    background-image: radial-gradient(#fdfdfd 62%, transparent 63%), conic-gradient(#00d761 0% 50%, #d9d9d9 50% 100%);
+}
+
+.pie.pie75 {
+    background-image: radial-gradient(#fdfdfd 62%, transparent 63%), conic-gradient(#00d761 0% 75%, #d9d9d9 75% 100%);
+}
+
+.pie.pie100 {
+    background-image: radial-gradient(#fdfdfd 62%, transparent 63%), conic-gradient(#00d761 0% 100%, #d9d9d9 100% 100%);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
