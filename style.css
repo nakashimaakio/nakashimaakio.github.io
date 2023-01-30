@@ -80,8 +80,8 @@ li.block {
     margin-top: 28px;
     justify-content: center;
     align-items: center;
-    width: 112px;
-    height: 112px;
+    width: 108px;
+    height: 108px;
     border-radius: 50%;
 }
 
@@ -98,11 +98,10 @@ li.block {
 }
 
 .pie.pie100 {
-    background-image: radial-gradient(#fdfdfd 62%, transparent 63%), conic-gradient(#00d761 0% 100%, #d9d9d9 100% 100%);
+    background-image: radial-gradient(#fdfdfd 62%, transparent 63%), conic-gradient(#00d761 0% 101%, #d9d9d9 100% 100%);
 }
 
 p.sentence.skill-name {
-    font-size: 110%;
     text-align: center;
     margin-top: 8px;
 }
