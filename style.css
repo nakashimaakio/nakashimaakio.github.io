@@ -17,6 +17,12 @@ p.title {
     letter-spacing: 0.1em;
 }
 
+hr.divider {
+    margin-top: 0px;
+    background-color: #DDDDDD;
+    margin-bottom: 20px;
+}
+
 .imagebutton {
     vertical-align: middle;
     height: 28px;
@@ -32,6 +38,15 @@ p.sentence {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+
+/* Works */
+
+p.sentence.appname {
+    margin-bottom: 2px;
+    margin-top: 16px;
+    font-size: 120%;
 }
 
 ul {
@@ -54,6 +69,15 @@ li.block {
     display: inline-block;
     _display: inline;
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+
+/* Skills */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .pie {
@@ -83,10 +107,4 @@ li.block {
 
 .pie.pie100 {
     background-image: radial-gradient(#fdfdfd 62%, transparent 63%), conic-gradient(#00d761 0% 100%, #d9d9d9 100% 100%);
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
