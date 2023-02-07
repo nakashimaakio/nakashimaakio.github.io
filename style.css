@@ -51,8 +51,8 @@ p.title {
     p.title {
         margin-top: 12px;
         margin-bottom: 0px;
-        font-size: 30px;
-        font-weight: 700;
+        font-size: 28px;
+        font-weight: 600;
         letter-spacing: 0.05em;
         text-align: center;
     }
@@ -72,8 +72,8 @@ p.subtitle {
     p.subtitle {
         border: none;
         text-align: center;
-        font-size: 26px;
-        font-weight: 700;
+        font-size: 24px;
+        font-weight: 600;
         margin-top: 48px;
         margin-bottom: 0px;
         letter-spacing: 0.1em;
@@ -174,6 +174,23 @@ li.block {
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
+@media screen and (max-width: 480px) {
+    li.block {
+        background-color: #BFDDFF;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        border-radius: 4px;
+        font-size: 14px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        width: fit-content;
+        display: inline-block;
+        _display: inline;
+        font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    }
+}
 
 /* Skills */
 p.sentence.skill {
