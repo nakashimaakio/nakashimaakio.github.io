@@ -14,7 +14,7 @@ body {
         margin-top: 36px;
         margin-right: 5%;
         margin-left: 5%;
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 36px;
         color: #404040;
         background-color: #FDFDFD;
@@ -104,7 +104,6 @@ p.subtitle.skill {
 
 p.sentence {
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
-    font-size: 16px;
 }
 
 div.link {
@@ -127,6 +126,14 @@ hr.divider {
     margin-top: 0px;
     background-color: #DDDDDD;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    hr.divider {
+        margin-top: 0px;
+        background-color: #DDDDDD;
+        margin-bottom: 12px;
+    }
 }
 
 .imagebutton {
@@ -152,8 +159,18 @@ a {
     text-decoration: none;
 }
 
-p.profile {
-    font-size: 16px;
+img.profileicon {
+    vertical-align: middle;
+    height: 20px;
+    width: auto;
+}
+
+@media screen and (max-width: 480px) {
+    img.profileicon {
+        vertical-align: middle;
+        height: 16px;
+        width: auto;
+    }
 }
 
 /* Works */
