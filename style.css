@@ -119,6 +119,7 @@ hr.divider {
 
 p.sentence {
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    line-height: 2;
 }
 
 /** ヘッダー部分 */
@@ -303,7 +304,6 @@ p.sentence.skill {
         border-radius: 50%;
     }
 }
-
 
 .pie.pie25 {
     background-image: radial-gradient(#fdfdfd 62%, transparent 63%), conic-gradient(#00d761 0% 25%, #d9d9d9 25% 100%);
