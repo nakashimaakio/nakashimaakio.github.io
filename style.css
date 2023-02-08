@@ -50,6 +50,7 @@ div.imageiconparent {
     }
 }
 
+/** 共通 */
 p.title {
     margin-top: 40px;
     margin-bottom: 0px;
@@ -102,10 +103,26 @@ p.subtitle.skill {
     }
 }
 
+hr.divider {
+    margin-top: 0px;
+    background-color: #DDDDDD;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    hr.divider {
+        margin-top: 0px;
+        background-color: #DDDDDD;
+        margin-bottom: 12px;
+    }
+}
+
 p.sentence {
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
+/** ヘッダー部分 */
+/** リンク */
 div.link {
     display: flex;
     justify-content: center;
@@ -122,20 +139,7 @@ div.link {
     }
 }
 
-hr.divider {
-    margin-top: 0px;
-    background-color: #DDDDDD;
-    margin-bottom: 20px;
-}
-
-@media screen and (max-width: 480px) {
-    hr.divider {
-        margin-top: 0px;
-        background-color: #DDDDDD;
-        margin-bottom: 12px;
-    }
-}
-
+/** リンクの画像ボタン */
 .imagebutton {
     vertical-align: middle;
     height: 28px;
@@ -159,6 +163,7 @@ a {
     text-decoration: none;
 }
 
+/** プロフィール情報 */
 img.profileicon {
     vertical-align: middle;
     height: 20px;
@@ -174,6 +179,35 @@ img.profileicon {
 }
 
 /* Works */
+ul {
+    padding-left: 0;
+}
+
+td.appicon {
+    width: 96px;
+    height: 96px;
+}
+
+@media screen and (max-width: 480px) {
+    td.appicon {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+img.appicon {
+    vertical-align: middle;
+    width: 96px;
+    height: 96px;
+}
+
+@media screen and (max-width: 480px) {
+    img.appicon {
+        vertical-align: middle;
+        width: 64px;
+        height: 64px;
+    }
+}
 
 p.sentence.appname {
     margin-bottom: 2px;
@@ -185,12 +219,8 @@ p.sentence.appname {
     p.sentence.appname {
         margin-bottom: 2px;
         margin-top: 12px;
-        font-size: 17px;
+        font-size: 16px;
     }
-}
-
-ul {
-    padding-left: 0;
 }
 
 li {
