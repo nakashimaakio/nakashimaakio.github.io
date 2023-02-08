@@ -134,7 +134,7 @@ div.link {
     div.link {
         display: flex;
         justify-content: center;
-        margin-top: 4px;
+        margin-top: 8px;
         margin-bottom: 32px;
     }
 }
@@ -289,6 +289,21 @@ p.sentence.skill {
     height: 108px;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 480px) {
+    .pie {
+        display: flex;
+        margin-left: 14px;
+        margin-right: 14px;
+        margin-top: 16px;
+        justify-content: center;
+        align-items: center;
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+    }
+}
+
 
 .pie.pie25 {
     background-image: radial-gradient(#fdfdfd 62%, transparent 63%), conic-gradient(#00d761 0% 25%, #d9d9d9 25% 100%);
