@@ -6,7 +6,8 @@ body {
     margin-bottom: 100px;
     color: #404040;
     background-color: #FDFDFD;
-    font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    line-height: 2;
 }
 
 @media screen and (max-width: 480px) {
@@ -14,11 +15,12 @@ body {
         margin-top: 36px;
         margin-right: 5%;
         margin-left: 5%;
-        font-size: 14px;
+        font-size: 15px;
         margin-bottom: 36px;
         color: #404040;
         background-color: #FDFDFD;
-        font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
+        font-family: 'Helvetica Neue', 'Arial', sans-serif;
+        line-height: 2;
     }
 }
 
@@ -58,6 +60,7 @@ p.title {
     font-weight: 700;
     letter-spacing: 0.1em;
     text-align: center;
+    font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
 }
 
 @media screen and (max-width: 480px) {
@@ -68,6 +71,7 @@ p.title {
         font-weight: 600;
         letter-spacing: 0.025em;
         text-align: center;
+        font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
     }
 }
 
@@ -79,6 +83,7 @@ p.subtitle {
     margin-top: 140px;
     margin-bottom: 0px;
     letter-spacing: 0.1em;
+    font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
 }
 
 @media screen and (max-width: 480px) {
@@ -90,6 +95,7 @@ p.subtitle {
         margin-top: 48px;
         margin-bottom: 0px;
         letter-spacing: 0.025em;
+        font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
     }
 }
 
@@ -115,11 +121,6 @@ hr.divider {
         background-color: #DDDDDD;
         margin-bottom: 12px;
     }
-}
-
-p.sentence {
-    font-family: 'Helvetica Neue', 'Arial', sans-serif;
-    line-height: 2;
 }
 
 /** ヘッダー部分 */
@@ -165,6 +166,10 @@ a {
 }
 
 /** プロフィール情報 */
+p.profile {
+    font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
+}
+
 img.profileicon {
     vertical-align: middle;
     height: 20px;
@@ -210,14 +215,14 @@ img.appicon {
     }
 }
 
-p.sentence.appname {
+p.appname {
     margin-bottom: 2px;
     margin-top: 16px;
     font-size: 20px;
 }
 
 @media screen and (max-width: 480px) {
-    p.sentence.appname {
+    p.appname {
         margin-bottom: 2px;
         margin-top: 12px;
         font-size: 16px;
@@ -258,12 +263,11 @@ li.block {
         width: fit-content;
         display: inline-block;
         _display: inline;
-        font-family: 'Helvetica Neue', 'Arial', sans-serif;
     }
 }
 
 /* Skills */
-p.sentence.skill {
+p.skill {
     font-size: 26px;
     margin-left: 40px;
     margin-bottom: 0px;
@@ -271,7 +275,7 @@ p.sentence.skill {
 }
 
 @media screen and (max-width: 480px) {
-    p.sentence.skill {
+    p.skill {
         font-size: 22px;
         margin-left: 20px;
         margin-bottom: 0px;
@@ -321,7 +325,7 @@ p.sentence.skill {
     background-image: radial-gradient(#fdfdfd 62%, transparent 63%), conic-gradient(#00d761 0% 101%, #d9d9d9 100% 100%);
 }
 
-p.sentence.skill-name {
+p.skill-name {
     text-align: center;
     margin-top: 8px;
 }
