@@ -11,11 +11,11 @@ body {
 
 @media screen and (max-width: 480px) {
     body {
-        margin-top: 40px;
+        margin-top: 36px;
         margin-right: 5%;
         margin-left: 5%;
         font-size: 16px;
-        margin-bottom: 40px;
+        margin-bottom: 36px;
         color: #404040;
         background-color: #FDFDFD;
         font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
@@ -32,9 +32,21 @@ body {
 @media screen and (max-width: 480px) {
     .imageicon {
         border-radius: 50%;
-        height: 92px;
-        width: 92px;
+        height: 80px;
+        width: 80px;
         margin-bottom: 0px;
+    }
+}
+
+div.imageiconparent {
+    height: 120px;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    div.imageiconparent {
+        height: 80px;
+        text-align: center;
     }
 }
 
@@ -49,11 +61,11 @@ p.title {
 
 @media screen and (max-width: 480px) {
     p.title {
-        margin-top: 12px;
+        margin-top: 8px;
         margin-bottom: 0px;
-        font-size: 28px;
+        font-size: 24px;
         font-weight: 600;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.025em;
         text-align: center;
     }
 }
@@ -72,11 +84,11 @@ p.subtitle {
     p.subtitle {
         border: none;
         text-align: center;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 600;
         margin-top: 48px;
         margin-bottom: 0px;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.025em;
     }
 }
 
@@ -106,7 +118,7 @@ div.link {
     div.link {
         display: flex;
         justify-content: center;
-        margin-top: 16px;
+        margin-top: 4px;
         margin-bottom: 32px;
     }
 }
@@ -123,6 +135,16 @@ hr.divider {
     width: auto;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .imagebutton {
+        vertical-align: middle;
+        height: 20px;
+        width: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
 }
 
 a {
