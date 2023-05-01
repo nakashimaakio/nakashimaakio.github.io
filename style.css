@@ -26,16 +26,16 @@ body {
 
 .imageicon {
     border-radius: 50%;
-    height: 120px;
-    width: 120px;
+    height: 180px;
+    width: 180px;
     margin-bottom: 0px;
 }
 
 @media screen and (max-width: 480px) {
     .imageicon {
         border-radius: 50%;
-        height: 80px;
-        width: 80px;
+        height: 120px;
+        width: 120px;
         margin-bottom: 0px;
     }
 }
@@ -54,22 +54,22 @@ div.imageiconparent {
 
 /** 共通 */
 p.title {
-    margin-top: 40px;
+    margin-top:68px;
     margin-bottom: 0px;
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-align: center;
     font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
 }
 
 @media screen and (max-width: 480px) {
     p.title {
-        margin-top: 8px;
+        margin-top: 44px;
         margin-bottom: 0px;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 600;
-        letter-spacing: 0.025em;
+        letter-spacing: 0.03em;
         text-align: center;
         font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
     }
