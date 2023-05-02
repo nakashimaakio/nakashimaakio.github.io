@@ -17,7 +17,7 @@ main {
 
 @media screen and (max-width: 480px) {
     body {
-        margin-top: 36px;
+        margin-top: 52px;
         margin-right: 5%;
         margin-left: 5%;
         font-size: 15px;
@@ -97,7 +97,7 @@ p.subtitle {
         text-align: center;
         font-size: 20px;
         font-weight: 600;
-        margin-top: 48px;
+        margin-top: 32px;
         margin-bottom: 0px;
         letter-spacing: 0.025em;
         font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
@@ -126,7 +126,7 @@ hr.divider {
     hr.divider {
         margin-top: 0px;
         background-color: #DDDDDD;
-        margin-bottom: 12px;
+        margin-bottom: 8px;
     }
 }
 
@@ -144,7 +144,7 @@ div.link {
         display: flex;
         justify-content: center;
         margin-top: 0px;
-        margin-bottom: 32px;
+        margin-bottom: 12px;
     }
 }
 
@@ -175,6 +175,14 @@ a {
 /** プロフィール情報 */
 p.profile {
     font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    p.profile {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
+    }
 }
 
 img.profileicon {
