@@ -97,7 +97,7 @@ p.subtitle {
         text-align: center;
         font-size: 20px;
         font-weight: 600;
-        margin-top: 32px;
+        margin-top: 24px;
         margin-bottom: 0px;
         letter-spacing: 0.025em;
         font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
@@ -111,6 +111,7 @@ p.subtitle.top {
 @media screen and (max-width: 480px) {
     p.subtitle.top {
         margin-top: 12px;
+        margin-bottom: 0px;
     }
 }
 
@@ -122,7 +123,8 @@ p.subtitle.skill {
 @media screen and (max-width: 480px) {
     p.subtitle.skill {
         font-size: 20px;
-        margin-top: 48px;
+        margin-top: 12px;
+        margin-bottom: 0px;
     }
 }
 
@@ -313,10 +315,10 @@ p.skill {
 
 @media screen and (max-width: 480px) {
     p.skill {
-        font-size: 22px;
-        margin-left: 20px;
-        margin-bottom: 0px;
-        margin-top: 20px;
+        font-size: 18px;
+        margin-left: 12px;
+        margin-bottom: 12px;
+        margin-top: 10px;
     }
 }
 
@@ -335,13 +337,13 @@ p.skill {
 @media screen and (max-width: 480px) {
     .pie {
         display: flex;
-        margin-left: 14px;
-        margin-right: 14px;
-        margin-top: 16px;
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-top: 0px;
         justify-content: center;
         align-items: center;
-        width: 76px;
-        height: 76px;
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
     }
 }
@@ -370,7 +372,8 @@ p.skill-name {
 @media screen and (max-width: 480px) {
     p.skill-name {
         text-align: center;
-        margin-top: 8px;
+        margin-top: 0px;
         font-size: 14px;
+        width: 82px;
     }
 }
