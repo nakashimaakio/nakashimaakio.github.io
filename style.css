@@ -11,7 +11,7 @@ body {
 }
 
 main {
-    max-width: 1100px;
+    max-width: 1080px;
     margin:  0 auto;
 }
 
@@ -59,9 +59,9 @@ div.imageiconparent {
 
 /** 共通 */
 p.title {
-    margin-top:12px;
+    margin-top:8px;
     margin-bottom: 0px;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-align: center;
@@ -85,7 +85,7 @@ p.subtitle {
     text-align: center;
     font-size: 30px;
     font-weight: 700;
-    margin-top: 100px;
+    margin-top: 64px;
     margin-bottom: 0px;
     letter-spacing: 0.1em;
     font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
@@ -219,8 +219,8 @@ ul {
 }
 
 td.appicon {
-    width: 96px;
-    height: 96px;
+    width: 84px;
+    height: 84px;
 }
 
 @media screen and (max-width: 480px) {
@@ -232,8 +232,8 @@ td.appicon {
 
 img.appicon {
     vertical-align: middle;
-    width: 96px;
-    height: 96px;
+    width: 84px;
+    height: 84px;
 }
 
 @media screen and (max-width: 480px) {
@@ -246,8 +246,8 @@ img.appicon {
 
 p.appname {
     margin-bottom: 2px;
-    margin-top: 16px;
-    font-size: 20px;
+    margin-top: 8px;
+    font-size: 18px;
     line-height: normal;
 }
 
@@ -306,9 +306,9 @@ li.block {
 /* Skills */
 p.skill {
     font-size: 26px;
-    margin-left: 40px;
-    margin-bottom: 0px;
-    margin-top: 68px;
+    margin-left: 28px;
+    margin-bottom: 12px;
+    margin-top: 24px;
 }
 
 @media screen and (max-width: 480px) {
@@ -324,11 +324,11 @@ p.skill {
     display: flex;
     margin-left: 28px;
     margin-right: 28px;
-    margin-top: 28px;
+    margin-top: 12px;
     justify-content: center;
     align-items: center;
-    width: 108px;
-    height: 108px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
