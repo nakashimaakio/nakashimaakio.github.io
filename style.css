@@ -379,3 +379,7 @@ p.skill-name {
         width: 82px;
     }
 }
+
+p.about-sentence {
+    font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
+}
