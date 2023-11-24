@@ -402,19 +402,22 @@ div.about-image-icon-parent {
     border-radius: 50%;
     height: 120px;
     width: 120px;
+    vertical-align: middle;
     margin-bottom: 0px;
 }
 
 @media screen and (max-width: 480px) {
     .about-image-icon {
         border-radius: 50%;
-        height: 80px;
-        width: 80px;
+        height: 100px;
+        width: 100px;
+        vertical-align: middle;
         margin-bottom: 0px;
     }
 }
 
 .about-profile-container {
+    margin-top: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -430,13 +433,27 @@ div.about-image-icon-parent {
     display: block;
 }
 
+.about-profile-sentence {
+    display: block;
+    margin-left: 24px;
+}
+
 @media screen and (max-width:480px) {
     .about-profile-container {
         display: flex;
         flex-direction: column;
+        padding-top: 24px;
+        padding-left: 20px;
+        padding-bottom: 8px;
+        padding-right: 20px;
     }
 
     .about-profile {
+        margin: auto;
+        text-align: center;
+    }
+
+    .about-profile-sentence {
         margin: auto;
         text-align: center;
     }
