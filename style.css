@@ -380,6 +380,19 @@ p.skill-name {
     }
 }
 
+/** about */
 p.about-sentence {
     font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
+}
+
+div.about-image-icon-parent {
+    height: 120px;
+    text-align: center;
+}
+
+.about-image-icon {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin-bottom: 0px;
 }
