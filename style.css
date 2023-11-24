@@ -420,16 +420,14 @@ div.about-image-icon-parent {
     align-items: center;
     background: #F0F0F0;
     border-radius: 12px;
+    padding-top: 8px;
+    padding-left: 24px;
+    padding-bottom: 8px;
+    padding-right: 24px;
 }
 
 .about-profile {
-    background-color: #cddc39;
-    color: #444;
     display: block;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    border: 3px solid #444;
 }
 
 @media screen and (max-width:480px) {
@@ -439,7 +437,7 @@ div.about-image-icon-parent {
     }
 
     .about-profile {
-        width: 80%;
-        margin: 10px auto;
+        margin: auto;
+        text-align: center;
     }
 }
