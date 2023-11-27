@@ -381,6 +381,18 @@ p.skill-name {
 }
 
 /** about */
+p.about-header {
+    color: #505050;
+    font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 0.09em;
+}
+
 p.about-sentence {
     font-family: "Noto Sans JP", "游ゴシック", "YuGothic", "メイリオ", meiryo, sans-serif;
 }
@@ -389,8 +401,9 @@ p.about-sentence {
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #D0D0D0;
+    background-color: #A0A0A0;
     border: 0;
+    margin-top: 0px;
 }
 
 div.about-image-icon-parent {
@@ -438,7 +451,7 @@ div.about-image-icon-parent {
     margin-left: 24px;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
     .about-profile-container {
         display: flex;
         flex-direction: column;
