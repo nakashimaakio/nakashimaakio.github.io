@@ -434,6 +434,7 @@ div.about-image-icon-parent {
     padding-left: 24px;
     padding-bottom: 8px;
     padding-right: 24px;
+    box-shadow: 4px 4px 6px -4px #CCCCCC;
 }
 
 .about-profile {
