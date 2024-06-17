@@ -455,3 +455,46 @@ div.about-image-icon-parent {
         text-align: center;
     }
 }
+
+.timeline {
+    position: relative;
+    margin-left: 5%;
+    margin-top: 24px;
+}
+
+/** 縦線 */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #e2e2e2;
+    top: 0;
+    bottom: 0;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+}
+
+/** 丸 */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: -14px;
+    background-color: #888888;
+    border: 4px solid #ffffff;
+    top: 52px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
