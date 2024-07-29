@@ -466,7 +466,7 @@ div.about-image-icon-parent {
 @media screen and (max-width: 480px) {
     .timeline {
         position: relative;
-        margin-left: 3%;
+        margin-left: 1%;
         margin-top: 16px;
     }
 }
@@ -491,7 +491,7 @@ div.about-image-icon-parent {
         padding-top: 0px;
         padding-bottom: 20px;
         padding-left: 26px;
-        padding-right: 20px;
+        padding-right: 8px;
         position: relative;
     }
 }
@@ -533,7 +533,7 @@ p.timeline-title {
 
 @media screen and (max-width: 480px) {
     p.timeline-title {
-        font-size: 18px;
+        font-size: 17px;
         font-weight: 700;
         margin: 0px;
     }
@@ -552,6 +552,7 @@ p.timeline-title {
 
 @media screen and (max-width: 480px) {
     .content {
+        font-size: 13px;
         padding-top: 18px;
         padding-bottom: 2px;
         padding-left: 20px;
