@@ -499,6 +499,14 @@ p.skill {
     }
 }
 
+.pie.pie5 {
+    background-image: radial-gradient(var(--surface) 62%, transparent 63%), conic-gradient(var(--accent) 0% 5%, var(--track) 5% 100%);
+}
+
+.pie.pie10 {
+    background-image: radial-gradient(var(--surface) 62%, transparent 63%), conic-gradient(var(--accent) 0% 10%, var(--track) 10% 100%);
+}
+
 .pie.pie25 {
     background-image: radial-gradient(var(--surface) 62%, transparent 63%), conic-gradient(var(--accent) 0% 25%, var(--track) 25% 100%);
 }
@@ -518,7 +526,16 @@ p.skill {
 p.skill-name {
     text-align: center;
     margin-top: 8px;
+    margin-bottom: 0;
     color: var(--text-soft);
+    font-weight: 500;
+}
+
+p.skill-years {
+    text-align: center;
+    margin-top: -2px;
+    font-size: 12px;
+    color: var(--muted);
     font-weight: 500;
 }
 
@@ -528,6 +545,11 @@ p.skill-name {
         font-size: 14px;
         width: 82px;
         line-height: 1.4;
+    }
+
+    p.skill-years {
+        font-size: 11px;
+        width: 82px;
     }
 }
 
@@ -598,6 +620,14 @@ p.skill-name {
     }
 }
 
+p.timeline-period {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 4px;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+}
+
 p.timeline-title {
     font-size: 20px;
     font-weight: 700;
@@ -606,6 +636,10 @@ p.timeline-title {
 }
 
 @media screen and (max-width: 480px) {
+    p.timeline-period {
+        font-size: 12px;
+    }
+
     p.timeline-title {
         font-size: 16px;
     }
