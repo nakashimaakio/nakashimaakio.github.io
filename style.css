@@ -299,6 +299,17 @@ img.profileicon {
     width: auto;
     margin-right: 4px;
     opacity: 0.85;
+    filter: brightness(0.25);
+}
+
+:root[data-theme="dark"] img.profileicon {
+    filter: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) img.profileicon {
+        filter: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -383,14 +394,14 @@ main p {
 
 /* Works table cells */
 td.appicon {
-    width: 84px;
-    height: 84px;
+    width: 76px;
+    height: 76px;
 }
 
 img.appicon {
     vertical-align: middle;
-    width: 84px;
-    height: 84px;
+    width: 76px;
+    height: 76px;
     border-radius: 18px;
     box-shadow: var(--shadow-sm);
 }
