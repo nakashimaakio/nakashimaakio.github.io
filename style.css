@@ -22,8 +22,27 @@
     --font-display: "Inter", "Noto Sans JP", "游ゴシック", "YuGothic", sans-serif;
 }
 
+/* ダークモードのトークン定義（共通） */
+:root[data-theme="dark"] {
+    --bg: #0e1016;
+    --bg-soft: #161924;
+    --surface: #171a24;
+    --surface-hover: #1d212e;
+    --text: #e8eaf0;
+    --text-soft: #b6bccb;
+    --muted: #8a91a3;
+    --border: #262b39;
+    --accent: #818cf8;
+    --accent-2: #38e0f0;
+    --accent-soft: rgba(129, 140, 248, 0.16);
+    --track: #2a3040;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 10px rgba(0, 0, 0, 0.35);
+    --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* OSがダーク かつ ユーザーがライトを明示指定していない場合に追従 */
 @media (prefers-color-scheme: dark) {
-    :root {
+    :root:not([data-theme="light"]) {
         --bg: #0e1016;
         --bg-soft: #161924;
         --surface: #171a24;
@@ -236,12 +255,18 @@ div.link a:hover {
     filter: brightness(0.25);
 }
 
+/* ダーク時（強制・追従いずれも）は白アイコンをそのまま表示 */
+:root[data-theme="dark"] .imagebutton[src*="google_play"],
+:root[data-theme="dark"] .imagebutton[src*="app_store"],
+:root[data-theme="dark"] .imagebutton[src*="github"] {
+    filter: none;
+}
+
 @media (prefers-color-scheme: dark) {
 
-    .imagebutton[src*="google_play"],
-    .imagebutton[src*="app_store"],
-    .imagebutton[src*="github"] {
-        /* 暗い背景ではそのまま白アイコンを表示 */
+    :root:not([data-theme="light"]) .imagebutton[src*="google_play"],
+    :root:not([data-theme="light"]) .imagebutton[src*="app_store"],
+    :root:not([data-theme="light"]) .imagebutton[src*="github"] {
         filter: none;
     }
 }
@@ -677,4 +702,54 @@ div.about-image-icon-parent {
         margin: auto;
         text-align: center;
     }
+}
+
+/* =========================================================
+   Theme switch (Light / Auto / Dark) — 控えめに最下部へ
+   ========================================================= */
+.theme-switch-wrap {
+    text-align: center;
+    margin-top: 56px;
+}
+
+.theme-switch {
+    display: inline-flex;
+    gap: 2px;
+    padding: 3px;
+    border-radius: 99px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    opacity: 0.55;
+    transition: opacity 0.3s var(--ease);
+}
+
+.theme-switch:hover {
+    opacity: 1;
+}
+
+.theme-switch button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    width: 32px;
+    height: 26px;
+    padding: 0;
+    border-radius: 99px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.25s var(--ease), color 0.25s var(--ease);
+}
+
+.theme-switch button:hover {
+    color: var(--text-soft);
+}
+
+.theme-switch button[aria-pressed="true"] {
+    background: var(--accent-soft);
+    color: var(--accent);
 }

@@ -19,6 +19,14 @@
     <link rel="stylesheet" href="style.css">
 
     <title>Nakashima Akio</title>
+
+    <!-- 保存済みテーマを描画前に適用してチラつきを防ぐ -->
+    <script>
+        try {
+            var t = localStorage.getItem('theme');
+            if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+        } catch (e) { }
+    </script>
 </head>
 
 <body style="padding:0;">
@@ -139,8 +147,46 @@
                 アプリ内部処理として、サーバへAPIリクエストしたりレスポンスを受け取ったりする処理は書くのですが、サーバ内部処理の開発は全くやったことがないです。
                 バックエンドの開発ができるようになると、個人でリリース可能なアプリの幅が広がりそうです。
             </p>
+
+            <!-- テーマ切り替え（ライト / 自動 / ダーク） -->
+            <div class="theme-switch-wrap" style="margin-bottom: 48px;">
+                <div class="theme-switch" role="group" aria-label="テーマ切り替え">
+                    <button type="button" data-theme-set="light" title="ライト" aria-label="ライト">☀</button>
+                    <button type="button" data-theme-set="auto" title="システム設定に合わせる" aria-label="自動">A</button>
+                    <button type="button" data-theme-set="dark" title="ダーク" aria-label="ダーク">☾</button>
+                </div>
+            </div>
         </main>
     </main>
+
+    <script>
+        // テーマ切り替え（light / dark を data-theme で強制、auto は OS 設定に追従）
+        (function () {
+            var root = document.documentElement;
+            var KEY = 'theme';
+            var buttons = document.querySelectorAll('.theme-switch button');
+            function apply(v) {
+                if (v === 'light' || v === 'dark') root.setAttribute('data-theme', v);
+                else root.removeAttribute('data-theme');
+                buttons.forEach(function (b) {
+                    b.setAttribute('aria-pressed', String(b.dataset.themeSet === (v || 'auto')));
+                });
+            }
+            var saved;
+            try { saved = localStorage.getItem(KEY); } catch (e) { }
+            apply(saved || 'auto');
+            buttons.forEach(function (b) {
+                b.addEventListener('click', function () {
+                    var v = b.dataset.themeSet;
+                    try {
+                        if (v === 'auto') localStorage.removeItem(KEY);
+                        else localStorage.setItem(KEY, v);
+                    } catch (e) { }
+                    apply(v);
+                });
+            });
+        })();
+    </script>
 </body>
 
 </html>
