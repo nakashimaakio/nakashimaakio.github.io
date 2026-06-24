@@ -22,7 +22,11 @@
     --font-display: "Inter", "Noto Sans JP", "游ゴシック", "YuGothic", sans-serif;
 }
 
-/* ダークモードのトークン定義（共通） */
+/* ダークモードのトークン定義
+   ユーザーが手動で「ダーク」を選択した場合（data-theme="dark"）と、
+   OSがダーク設定の場合（prefers-color-scheme: dark）で同じ変数を定義。
+   CSSカスタムプロパティは片方のルールにまとめられないため、両方に記述が必要。
+   変更時は2箇所とも更新すること。 */
 :root[data-theme="dark"] {
     --bg: #0e1016;
     --bg-soft: #161924;
@@ -40,7 +44,7 @@
     --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.45);
 }
 
-/* OSがダーク かつ ユーザーがライトを明示指定していない場合に追従 */
+/* OSがダーク かつ ユーザーがライトを明示指定していない場合に追従（上記と同じ値） */
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
         --bg: #0e1016;
@@ -193,11 +197,6 @@ p.subtitle.top {
 
     p.subtitle.top {
         margin-top: 28px;
-    }
-
-    p.subtitle.skill {
-        font-size: 21px;
-        margin-top: 14px;
     }
 }
 
