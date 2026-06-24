@@ -166,11 +166,6 @@ p.subtitle.top {
     margin-top: 52px;
 }
 
-p.subtitle.skill {
-    font-size: 28px;
-    margin-top: 64px;
-}
-
 @media screen and (max-width: 480px) {
     p.subtitle {
         font-size: 21px;
