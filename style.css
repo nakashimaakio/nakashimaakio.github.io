@@ -347,9 +347,10 @@ main p {
     border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
 }
 
-.card table {
-    width: 100%;
-    border-collapse: collapse;
+.card-app {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
 }
 
 .card-more {
@@ -392,29 +393,23 @@ main p {
     }
 }
 
-/* Works table cells */
-td.appicon {
-    width: 76px;
-    height: 76px;
-}
-
+/* Works app icon */
 img.appicon {
-    vertical-align: middle;
     width: 76px;
     height: 76px;
+    flex-shrink: 0;
     border-radius: 18px;
     box-shadow: var(--shadow-sm);
 }
 
-@media screen and (max-width: 480px) {
+.app-info {
+    min-width: 0;
+}
 
-    td.appicon,
+@media screen and (max-width: 480px) {
     img.appicon {
         width: 64px;
         height: 64px;
-    }
-
-    img.appicon {
         border-radius: 14px;
     }
 }
@@ -712,6 +707,27 @@ div.about-image-icon-parent {
     .about-profile-sentence {
         margin: auto;
         text-align: center;
+    }
+}
+
+/* Interview questions */
+.interview-q {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.8;
+    margin: 48px 0 0;
+    color: var(--text);
+}
+
+.interview-q:first-of-type {
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 480px) {
+    .interview-q {
+        font-size: 16px;
+        margin-top: 36px;
     }
 }
 
