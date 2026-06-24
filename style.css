@@ -19,6 +19,7 @@
     --radius: 14px;
     --radius-sm: 9px;
     --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --font-display: "Inter", "Noto Sans JP", "游ゴシック", "YuGothic", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -135,14 +136,12 @@ div.imageiconparent {
 
 p.title {
     margin: 22px 0 0;
-    font-size: 30px;
+    font-family: var(--font-display);
+    font-size: 32px;
     font-weight: 800;
-    letter-spacing: 0.06em;
+    letter-spacing: -0.02em;
     text-align: center;
-    background: linear-gradient(120deg, var(--accent), var(--accent-2));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--text);
 }
 
 @media screen and (max-width: 480px) {
@@ -155,9 +154,10 @@ p.title {
 /* Section headings */
 p.subtitle {
     text-align: center;
+    font-family: var(--font-display);
     font-size: 28px;
     font-weight: 800;
-    letter-spacing: 0.08em;
+    letter-spacing: -0.02em;
     margin: 72px 0 0;
     color: var(--text);
 }
