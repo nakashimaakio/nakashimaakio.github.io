@@ -207,21 +207,43 @@ div.link {
     margin: 18px 0 30px;
 }
 
-.imagebutton {
-    vertical-align: middle;
-    height: 26px;
-    width: auto;
+/* 円形の背景・影は親リンクが持つ（画像本体には背景を載せない） */
+div.link a {
+    display: inline-flex;
     padding: 9px;
     border-radius: 50%;
     background: var(--surface);
     box-shadow: var(--shadow-sm);
-    box-sizing: content-box;
     transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
 }
 
-.imagebutton:hover {
+div.link a:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-md);
+}
+
+.imagebutton {
+    display: block;
+    height: 26px;
+    width: auto;
+}
+
+/* 白塗りにしたモノクロアイコンのみ、明るい背景では暗色に描画して視認性を確保
+   （Qiita等のカラーアイコンには適用しない） */
+.imagebutton[src*="google_play"],
+.imagebutton[src*="app_store"],
+.imagebutton[src*="github"] {
+    filter: brightness(0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+
+    .imagebutton[src*="google_play"],
+    .imagebutton[src*="app_store"],
+    .imagebutton[src*="github"] {
+        /* 暗い背景ではそのまま白アイコンを表示 */
+        filter: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -230,9 +252,12 @@ div.link {
         margin: 12px 0 14px;
     }
 
+    div.link a {
+        padding: 7px;
+    }
+
     .imagebutton {
         height: 20px;
-        padding: 7px;
     }
 }
 
@@ -318,6 +343,16 @@ main p {
 @media screen and (max-width: 480px) {
     .card {
         padding: 14px 16px;
+    }
+
+    .card-more {
+        margin-top: 12px;
+        padding: 0;
+    }
+
+    .card-more .more-text {
+        padding: 6px 14px;
+        font-size: 14px;
     }
 }
 
