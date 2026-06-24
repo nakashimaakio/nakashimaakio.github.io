@@ -157,7 +157,7 @@ div.imageiconparent {
     }
 }
 
-p.title {
+.title {
     margin: 22px 0 0;
     font-family: var(--font-display);
     font-size: 32px;
@@ -168,14 +168,14 @@ p.title {
 }
 
 @media screen and (max-width: 480px) {
-    p.title {
+    .title {
         margin-top: 14px;
         font-size: 22px;
     }
 }
 
 /* Section headings */
-p.subtitle {
+.subtitle {
     text-align: center;
     font-family: var(--font-display);
     font-size: 28px;
@@ -185,17 +185,17 @@ p.subtitle {
     color: var(--text);
 }
 
-p.subtitle.top {
+.subtitle.top {
     margin-top: 52px;
 }
 
 @media screen and (max-width: 480px) {
-    p.subtitle {
+    .subtitle {
         font-size: 21px;
         margin-top: 40px;
     }
 
-    p.subtitle.top {
+    .subtitle.top {
         margin-top: 28px;
     }
 }
@@ -348,7 +348,7 @@ main p {
 
 .card-app {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 16px;
 }
 
@@ -435,12 +435,9 @@ p.app-downloads {
 }
 
 /* Tag chips */
-ul {
+.card ul {
     padding-left: 0;
     margin: 4px 0 0;
-}
-
-li {
     list-style: none;
 }
 
@@ -509,10 +506,6 @@ p.skill {
 
 .pie.pie25 {
     background-image: radial-gradient(var(--surface) 62%, transparent 63%), conic-gradient(var(--accent) 0% 25%, var(--track) 25% 100%);
-}
-
-.pie.pie50 {
-    background-image: radial-gradient(var(--surface) 62%, transparent 63%), conic-gradient(var(--accent) 0% 50%, var(--track) 50% 100%);
 }
 
 .pie.pie75 {
@@ -670,21 +663,24 @@ p.timeline-title {
 /* =========================================================
    About page
    ========================================================= */
+.about-sticky-header {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: color-mix(in srgb, var(--bg-soft) 75%, transparent);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--border);
+}
+
 p.about-header {
     color: var(--text-soft);
     font-size: 13px;
     padding: 10px 0;
     margin: 0;
     letter-spacing: 0.09em;
-}
-
-.about-br {
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: var(--border);
-    border: 0;
-    margin-top: 0;
 }
 
 div.about-image-icon-parent {
