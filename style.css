@@ -5,7 +5,7 @@
     --bg: #f7f8fb;
     --bg-soft: #eef1f7;
     --surface: #ffffff;
-    --surface-hover: #f4f6fb;
+
     --text: #1f2430;
     --text-soft: #4a5160;
     --muted: #7a8395;
@@ -31,7 +31,7 @@
     --bg: #0e1016;
     --bg-soft: #161924;
     --surface: #171a24;
-    --surface-hover: #1d212e;
+
     --text: #e8eaf0;
     --text-soft: #b6bccb;
     --muted: #8a91a3;
@@ -50,7 +50,7 @@
         --bg: #0e1016;
         --bg-soft: #161924;
         --surface: #171a24;
-        --surface-hover: #1d212e;
+    
         --text: #e8eaf0;
         --text-soft: #b6bccb;
         --muted: #8a91a3;
@@ -459,7 +459,7 @@ li.block {
 /* =========================================================
    Skills
    ========================================================= */
-p.skill {
+.skill {
     font-size: 22px;
     font-weight: 700;
     margin: 30px 0 14px 14px;
@@ -467,7 +467,7 @@ p.skill {
 }
 
 @media screen and (max-width: 480px) {
-    p.skill {
+    .skill {
         font-size: 18px;
         margin: 24px 0 12px 12px;
     }
@@ -663,6 +663,33 @@ p.timeline-title {
 /* =========================================================
    About page
    ========================================================= */
+.about-body {
+    padding: 0;
+}
+
+.about-main {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.about-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.about-title {
+    margin-top: 60px;
+    font-size: 32px;
+}
+
+.about-profile-text {
+    font-size: 14px;
+}
+
+.about-theme-switch {
+    margin-bottom: 48px;
+}
+
 .about-sticky-header {
     padding-left: 5%;
     padding-right: 5%;
@@ -681,11 +708,6 @@ p.about-header {
     padding: 10px 0;
     margin: 0;
     letter-spacing: 0.09em;
-}
-
-div.about-image-icon-parent {
-    height: 120px;
-    text-align: center;
 }
 
 .about-image-icon {
