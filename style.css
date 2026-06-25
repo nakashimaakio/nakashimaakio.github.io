@@ -840,6 +840,51 @@ p.about-header {
 }
 
 /* =========================================================
+   Contact
+   ========================================================= */
+.contact-text {
+    text-align: center;
+    color: var(--text-soft);
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), border-color 0.35s var(--ease);
+}
+
+.contact-button:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+}
+
+.contact-button .more-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 32px;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.contact-button .more-text::after {
+    content: "→";
+    transition: transform 0.3s var(--ease);
+}
+
+.contact-button:hover .more-text::after {
+    transform: translateX(4px);
+}
+
+/* =========================================================
    Theme switch (Light / Auto / Dark) — 控えめに最下部へ
    ========================================================= */
 .theme-switch-wrap {
